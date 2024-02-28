@@ -63,7 +63,7 @@ main{
 .signin:hover{
     cursor: pointer;
     border-radius: 10px;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-radius 0.2s;
 }
 .square{
     display: inline-flex;
@@ -133,6 +133,13 @@ input[type=text] {
 .restaurants img{
     width: 470px;
     height: 350px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+.restaurants img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.3s;
 }
 .restaurant{
     text-decoration: none;
