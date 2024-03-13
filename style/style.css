@@ -85,10 +85,7 @@ body{
     flex-direction: column;
     justify-content: center;
     margin-top: 66px;
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
-    background-color: #efeff257;
-    box-shadow: 0 0 2px #19191C;
+    background-color: #9898c1;
 }
 .hamburger{
     display: none;
@@ -478,6 +475,9 @@ body{
     }
     .header{
         padding: 15px;
+    }
+    .nav__list-mobile.active{
+        display: flex;
     }
     .mobile__link{
         display: flex;
