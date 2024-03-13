@@ -1,170 +1,273 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>ITC</title>
-  </head>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
-  <body>
-    <header class="header">
-      <nav class="navbar">
+<body>
+    <header class="container header">
+       <div class="header__box">
+            <a class="header__logo" href="index.html" tabindex="0">
+                <img src="img/logo_header.svg" alt="logo of the company">
+                UpDate
+            </a>
+       </div>
+       <nav class="nav">
+            <ul class="nav__list">
+                <li><a class="nav__link" href="#">Courses</a></li>
+                <li><a class="nav__link" href="#">Teachers</a></li>
+                <li><a class="nav__link" href="#">Blog</a></li>
+            </ul>
+            <div class="btn-box">
+                <a class="header__link" href="#">En</a>
+                <a class="header__link" href="#">Sign In</a>
+                <a class="header__button" href="#">Trial free</a>
+            </div>
+        </nav>
+        <div class="hamburger" onclick=showNavlist()>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+       </div>
+       <nav class="nav__list-mobile">
+            <a class="mobile__link" href="#">Courses</a>
+            <a class="mobile__link" href="#">Teachers</a>
+            <a class="mobile__link" href="#">Blog</a>
+            <a class="mobile__link" href="#">En</a>
+            <a class="mobile__link" href="#">Sign In</a>
+        </nav>
 
-        <a href="#" class="logo">
-          <p class="uber">UBER</p> <p class="eats">EATS</p>
-        </a>
-
-        <div class="container">
-          <button class="signin">Войти</button>
-          <div role="button" tabindex="0" class="bag">
-            <div class="rectangle"><div class="oval"></div></div>
-          </div>
-        </div>  
-      </nav>
     </header>
 
     <main>
-      
-      <div class="search">
-        <input type="text" placeholder="Поиск по ресторанам и кухням">
-      </div>
-      
-      <h1 class="kharkiv-title">Рестораны в Харькове</h1>
-      
-      <div class="restaurants">
-        <a href="#" class="restaurant">
-          <img src="img/66f1d3abd4940a817c788c541e9fbeb3.png" alt="1">
-          <p class="rest-name">Макдональдс-газетный</p>
-          <p class="rest-kitchen">₴₴ • Бургеры</p>
-          <p class="time">25 - 35 мин</p>
-        </a>
-        <a href="#" class="restaurant">
-          <img src="img/d6cbe90533884dd7cfe6649222111bfa.png" alt="1">
-          <p class="rest-name">DimSum & Co — ЦДМ</p>
-          <p class="rest-kitchen">₴ • Японская • Китайская • Азиатская</p>
-          <p class="time">40 - 50 мин</p>
-        </a>
-        <a href="#" class="restaurant">
-          <img src="img/a074eb38c8ee48f65c4d05cff31d07ae.png" alt="1">
-          <p class="rest-name">ДвижОК — Манежная</p>
-          <p class="rest-kitchen">₴ • Американская • Европейская</p>
-          <p class="time">35 - 45 мин</p>
-        </a>
-        <a href="#" class="restaurant">
-          <img src="img/b170f9a27e7164c221721bfc87422d65.png" alt="1">
-          <p class="rest-name">НЯ — NHA</p>
-          <p class="rest-kitchen">₴₴ • Вьетнамская</p>
-          <p class="time">30 - 40 мин</p>
-        </a>
-        <a href="#" class="restaurant">
-          <img src="img/e7ec2190e9f85dd38530ebb6f2d7d0d0.png" alt="1">
-          <p class="rest-name">Точка Дзы — Цветной</p>
-          <p class="rest-kitchen">₴₴ • Вьетнамская</p>
-          <p class="time">40 - 50 мин</p>
-        </a>
-        <a href="#" class="restaurant">
-          <img src="img/4c21b22e642a13f62c4b2e98649ec2c9.png" alt="1">
-          <p class="rest-name">Cinnabon</p>
-          <p class="rest-kitchen">₴ • Выпечка • Десерты • Капкейки</p>
-          <p class="time">25 - 35 мин</p>
-        </a>
-        <a href="#" class="restaurant">
-          <img src="img/10ed1555ec1226afbb7ebc94743721e9.png" alt="1">
-          <p class="rest-name">PIZZELOVE</p>
-          <p class="rest-kitchen">₴₴ • Пицца</p>
-          <p class="time">15 - 25 мин</p>
-        </a>
-        <a href="#" class="restaurant">
-          <img src="img/ee56bc8525b3a87273ebcaaef0d7793e.png" alt="1">
-          <p class="rest-name">Zю кафе — Тверская</p>
-          <p class="rest-kitchen">₴₴ • Японская</p>
-          <p class="time">25 - 35 мин</p>
-        </a>
-        <a href="#" class="restaurant">
-          <img src="img/ca4a31f783e1a79e2b56b3218a4dc177.png" alt="1">
-          <p class="rest-name">Bar BQ Cafe — Манежная</p>
-          <p class="rest-kitchen">₴₴₴ • Европейская</p>
-          <p class="time">30 - 40 мин</p>
-        </a>
-
-      </div>
-      <a href="#">
-        <div class="square">
-          <div class="pointer"></div>
-        </div>
-      </a>
-    </main>
-    
-    <footer>
-      
-      <div class="container2">
-        <div class="first-lvl">
-          <p class="ubr">UBER</p>
-          <p class="ets">EATS</p>
-        </div>
+        <section class="offer container">
+            <div class="offer__holder">
+                <p class="offer__month">6 month</p>
+                <p class="offer__text" tabindex="0">profession:</p>
+                <h1 class="offer__title" tabindex="0">UI/UX designer</h1>
+                <p class="offer__description" tabindex="0">
+                    You will learn how to create a brand identity on the web and for printing. 
+                    Learn how to work in Illustrator, Photoshop, InDesign and Figma.<br>
+                    Add posters, logos, merch design and other strong projects to your portfolio. 
+                    Start a career in the studio or freelance.
+                </p>
+                
+                <button class="offer__btn">
+                    Started
+                </button>
         
-        <div class="second-lvl">
-          <div class="second-lvl-left">
-            <div class="dropdown">
-              <div class="select">
-                <img src="img/world.png" alt="world">
-                <span class="selected">Русский</span>
-                <div class="caret"></div>
-              </div>
-              <ul class="menu">
-                <li class="active">Русский</li>
-                <li>English</li>
-                <li>Українська</li>
-                <li>Polska</li>
-              </ul>
-            </div>
-
-            <div class="hashtg">
-              <a href="#">#UberEats</a>
+                <p class="offer__sale">
+                    25%
+                </p>
+                <p class="offer__time">
+                    <time>
+                        17 days 17:44:16
+                    </time>
+                </p>
             </div>
             
-            <div class="socials">
-              <a href="#"><img src="img/facebook.png" alt="facebook"></a>
-              <a href="#"><img src="img/twitter.png" alt="twitter"></a>
-              <a href="#"><img src="img/Combined Shape.png" alt="inst"></a>
-            </div>
-          </div>
-
-          <div class="second-lvl-mid">
-            <a href="#">Об UberEats</a>
-            <a href="#">Станьте партнером по доставке</a>
-            <a href="#">Станьте партнером-рестораном</a>
-          </div>
-
-          <div class="second-lvl-right">
-            <a href="#">Все города</a>
-            <a href="#">Цены</a>
-            <a href="#">Помощь</a>
-            <a href="#" class="last">FAQs</a>
-          </div>
-        </div>
+            <ul class="programs__list">
+                <li class="programs__invision programs__list-item">InVision</li>
+                <li class="programs__protopie programs__list-item">ProtoPie</li>
+                <li class="programs__miro programs__list-item">Miro</li>
+                <li class="programs__photoshop programs__list-item">Photoshop</li>
+                <li class="programs__figma programs__list-item">Figma</li>
+                <li class="programs__illustrator programs__list-item">Illustrator</li>
+            </ul>
+        </section>
+        <section class="profession__designer">
+            <div class="container">
+                <div class="profession__box">
+                    <div class="designer__text">
+                        <h2 class="designer__title" tabindex="0">Profession  <br>UI/UX designer</h2>
+                        <p class="designer__description" tabindex="0">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis  
+                        occaecati cupiditate non provident, similique sunt in culpa qui officia 
+                        deserunt mollitia animi, id est laborum et dolorum fuga.
+                        </p>
+                    </div>
         
-        <div class="third-lvl">
-          <a href="#">
-            <img src="img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.png" alt="appstore">
-          </a>
-          <a href="#">
-            <img src="img/en_badge_web_generic-cf6dad406f.png" alt="playmarket">
-          </a>
-        </div>
-        
-        <div class="fourth-lvl">
-          <a href="#">© 2017 Uber Technologies Inc.</a>
-          <a href="#">Обработка персональных данных</a>
-          <a href="#">Пользовательское соглашение</a>
-        </div>
-       
-      </div>
-      
-    </footer>
+                    <div class="job__info">
+                        <div class="job__item">
+                            <div class="underline">
+                                <h2 class="job__item-title" tabindex="0">5 000 $</h2>
+                                <p class="job__item-name" tabindex="0">Salary</p>
+                            </div>
+                            <p class="job__item-description" tabindex="0">Nam libero tempore, cum soluta nobis est</p>
+                        </div>
+                        <div class="job__item">
+                            <div class="underline">
+                                <h2 class="job__item-title" tabindex="0">4 225</h2>
+                                <p class="job__item-name" tabindex="0">Vacancies</p>
+                            </div>
+                            <p class="job__item-description" tabindex="0">Vero eos et accusamus</p>
+                        </div>
+                    </div>
+                </div>
     
-  </body>
+                <div class="profession__cards">
+                    <article class="profession__portfolio card__item">
+                        <h3 class="profession__title" tabindex="0">Portfolio</h3>
+                        <p class="profession__description" tabindex="0">
+                            You will learn how to create a brand 
+                            identity on the web and for printing. 
+                            Learn how to work in Illustrator, Photoshop, 
+                            InDesign and Figma
+                        </p>
+                    </article>
+                    <article class="profession__intership card__item">
+                        <h3 class="profession__title" tabindex="0">Internship</h3>
+                        <p class="profession__description" tabindex="0">
+                            You will learn how to create a brand identity 
+                            on the web and for printing. Learn how to work 
+                            in Illustrator, Photoshop, InDesign and Figma
+                        </p>
+                    </article>
+                    <article class="profession__certificate card__item">
+                        <h3 class="profession__title" tabindex="0">Certificate</h3>
+                        <p class="profession__description" tabindex="0">
+                            You will learn how to create a brand identity 
+                            on the web and for printing. Learn how to work 
+                            in Illustrator, Photoshop, InDesign and Figma
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="discover">
+            <div class="container">
+                <div class="discover__wrapper">
+                    <h2 class="discover__title" tabindex="0">Discover Our <br> Prices</h2>
 
+                    <div class="prices__cards">
+                        <article class="prices__card-item">
+                            <div class="prices__box">
+                                <h3 class="card__title" tabindex="0">Base</h3>
+                                <div class="card__holder">
+                                    <ul class="card__list">
+                                        <li class="first__item">Et dolorum fuga et harum quidem rerum</li>
+                                        <li>Mentors and community support</li>
+                                        <li>Necessitatibus saepe</li>
+                                        <li>Ut aut reiciendis</li>
+                                    </ul>
+                    
+                                    <div class="card__prices">
+                                        <p class="start__price">12 000$</p>
+                                        <h2 class="sale__price" tabindex="0">3 000$</h2>
+                                        <button class="choose__button">Choose</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+        
+                        <article class="prices__card-item optimal">
+                            <div class="prices__box">
+                                <h3 class="card__title" tabindex="0">Optimal</h3>
+                                <div class="card__holder">
+                                    <ul class="card__list">
+                                        <li class="first__item">Rerum hic tenetur a sapiente</li>
+                                        <li>Consectetur, adipisci velit</li>
+                                        <li>Ut aliquid ex ea commodi consequatur</li>
+                                        <li>Eum fugiat quo voluptas nulla</li>
+                                        <li>Illo inventore veritatis et quasi architecto</li>
+                                    </ul>
+                    
+                                    <div class="card__prices">
+                                        <p class="start__price optimal">24 000$</p>
+                                        <h2 class="sale__price" tabindex="0">6 000$</h2>
+                                        <button class="choose__button optimal__btn">Choose</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+        
+                        <article class="prices__card-item">
+                            <div class="prices__box">
+                                <h3 class="card__title" tabindex="0">Premium</h3>
+                                <div class="card__holder">
+                                    <ul class="card__list">
+                                        <li class="first__item">Ullamco laboris nisi ut</li>
+                                        <li>Voluptate velit esse cillum</li>
+                                        <li>Qui in ea voluptate velit esse quam nihil molestiae</li>
+                                        <li>Necessitatibus saepe eveniet</li>
+                                        <li>Sunt in culpa qui officia</li>
+                                    </ul>
+                    
+                                    <div class="card__prices">
+                                        <p class="start__price">64 000$</p>
+                                        <h2 class="sale__price" tabindex="0">18 000$</h2>
+                                        <button class="choose__button">Choose</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__box">
+                <div class="footer__info">
+                    <a class="footer__logo" href="index.html">
+                        <img src="img/logo_footer.svg" alt="logo">
+                        UpDate
+                    </a>
+                    <div class="contacts">
+                        <a class="contacts__link" href="mailto:support@update.com">support@update.com</a>
+                        <a class="contacts__link" href="tel:12136771024">+1 (213) 677 10 24</a>
+                    </div>
+                </div>
+                <div class="sitemap__box">
+                    <div class="sitemap">
+                        <h6 class="sitemap__title">Courses</h6>
+                        <ul class="sitemap__list">
+                            <li><a class="sitemap__link" href="#">Animation</a></li>
+                            <li><a class="sitemap__link" href="#">Design</a></li>
+                            <li><a class="sitemap__link" href="#">Illustration</a></li>
+                            <li><a class="sitemap__link" href="#">Programming</a></li>
+                            <li><a class="sitemap__link" href="#">Photo & Film</a></li>
+                            <li><a class="sitemap__link" href="#">Marketing</a></li>
+                        </ul>
+                    </div>
+                    <div class="sitemap">
+                        <h6 class="sitemap__title">Teachers</h6>
+                        <ul class="sitemap__list">
+                            <li><a class="sitemap__link" href="#">All Teachers</a></li>
+                            <li><a class="sitemap__link" href="#">Become a Teacher</a></li>
+                        </ul>
+                    </div>
+                    <div class="sitemap">
+                        <h6 class="sitemap__title">Information</h6>
+                        <ul class="sitemap__list">
+                            <li><a class="sitemap__link" href="#">Blog</a></li>
+                            <li><a class="sitemap__link" href="#">About us</a></li>
+                            <li><a class="sitemap__link" href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="sitemap">
+                        <h6 class="sitemap__title">En</h6>
+                        <ul class="sitemap__list">
+                            <li><a class="sitemap__link" href="#">English</a></li>
+                            <li><a class="sitemap__link" href="#">French</a></li>
+                            <li><a class="sitemap__link" href="#">Russian</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <a class="copyright__link" href="#">Policy privacy</a>
+                <p class="copyright__text" >Copyright 2022. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>

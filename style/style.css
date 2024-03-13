@@ -1,0 +1,564 @@
+body{
+    margin: 0;
+    background-color: #EFEFF2;
+    color: #19191C;
+    font: 400 18px/28px Inter, sans-serif;
+}
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* HEADER SECTION-----------------------------------------------------------------------*/
+
+
+.header{
+    display: flex;
+    padding: 36px 0 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__box{
+    display: flex;
+    align-items: center;
+    gap: 68px;
+}
+.header__logo{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    color: #19191C;
+    text-decoration: none;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1227.79px;
+}
+.nav__list{
+    display: flex;
+    list-style: none;
+    gap: 48px;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+}
+.nav__link{
+    color: #19191C;
+    text-decoration: none;
+}
+.btn-box{
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+.header__link{
+    color: #19191C;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    text-decoration: none;
+}
+.header__button{
+    background-color: #19191C;
+    color: #EFEFF2;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    padding: 12px 37px;
+    text-decoration: none;
+}
+.nav__list-mobile{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 66px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    background-color: #efeff257;
+    box-shadow: 0 0 2px #19191C;
+}
+.hamburger{
+    display: none;
+}
+.hamburger .line{
+    width: 30px;
+    height: 3px;
+    background-color: #19191C;
+    margin: 6px 0;
+}
+
+
+/* OFFER SECTION-----------------------------------------------------------------------*/
+
+
+.offer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 166px;
+    background: url(../img/a2345a7bb4c8f5d7e09e91d7097b133f.png) 178% 100% no-repeat;
+    background-size: 1031px 731px;
+}
+.offer__holder{
+    width: 648px;
+    background: url(../img/Ellipse\ 20.png) 220% -180% no-repeat;
+}
+.offer__month{
+    margin: 0;
+    color: #19191C;
+    border-bottom: 4px solid #504DEE;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    width: fit-content;
+}
+.offer__text{
+    margin: 0;
+    padding-top: 32px;
+}
+.offer__title{
+    margin: 0;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 70px;
+}
+.offer__description{
+    margin: 0;
+    padding-top: 48px;
+    padding-bottom: 50px;
+}
+.offer__btn{
+    background-color: #504DEE;
+    color: #FBFBFC;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    border: none;
+    padding: 16px 37px;
+}
+.offer__btn:hover{
+    cursor: pointer;
+}
+.offer__sale{
+    margin: 0;
+    padding-top: 110px;
+    color: #19191C;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 70px;
+}
+.offer__time{
+    margin: 0;
+    padding-top: 8px;
+    padding-bottom: 200px;
+    color: #19191C;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+}
+.programs__list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: url(../img/Ellipse\ 21.png) 50% 120% no-repeat;
+    position: relative;
+}
+.programs__list-item{
+    position: absolute;
+    border: 2px solid #19191C;
+    padding: 16px 36px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+}
+.programs__invision{
+    top: 80px;
+    right: 0px;
+}
+.programs__protopie{
+    top: 0;
+    right: 220px;
+}
+.programs__miro{
+    top: 100px;
+    right: 440px;
+}
+.programs__photoshop{
+    top: 250px;
+    right: 420px;
+}
+.programs__figma{
+    top: 380px;
+    right: 680px;
+}
+.programs__illustrator{
+    top: 580px;
+    right: 580px;
+}
+
+
+/* PROFESSIO DESIGNER SECTION----------------------------------------------------------------*/
+
+
+.profession__designer, .discover{
+    background-color: #FBFBFCff;
+}
+.profession__box{
+    display: flex;
+    justify-content: space-between;
+    padding: 168px 0;
+}
+.designer__text{
+    width: 588px;
+}
+.designer__title{
+    margin: 0;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 70px;
+}
+.designer__description{
+    margin: 0;
+    padding-top: 28px;
+    color: #6D6D77;
+}
+.job__info{
+    display: flex;
+    gap: 103px;
+}
+.job__item-title{
+    margin: 0;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 70px;
+}
+.job__item-name{
+    margin: 0;
+    padding-bottom: 21px;
+}
+.underline{
+    width: 254px;
+    border-bottom: 4px solid #19191C;
+}
+.job__item-description{
+    margin: 0;
+    padding-top: 18px;
+    color: #6D6D77;
+}
+
+.profession__portfolio{
+    background-color: #DEEFE4;
+}
+.profession__intership{
+    background-color: #F3F3D7;
+}
+.profession__certificate{
+    background-color: #EFDEEE;
+}
+.profession__cards{
+    display: flex;
+    gap: 20px;
+}
+.card__item{
+    margin: 0;
+    padding: 68px 48px;
+}
+.profession__title{
+    margin: 0;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 41px;
+    padding-bottom: 28px;
+    border-bottom: 4px solid #19191C;
+}
+.profession__description{
+    margin: 0;
+    padding-top: 12px;
+}
+
+
+/* DISCOVER SECTION--------------------------------------------------------------------------*/
+
+
+.discover__wrapper{
+    padding: 170px 0;
+}
+.discover__title{
+    margin: 0;
+    padding-bottom: 100px;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 70px;   
+}
+.prices__cards{
+    display: flex;
+    gap: 20px;
+}
+.prices__box{
+    padding: 48px 68px;
+
+}
+.card__title{
+    margin: 0;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 41px;
+    padding-bottom: 48px;
+}
+.card__holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 547px;
+}
+.card__list{
+    margin: 0;
+    list-style-type: square;
+}
+.card__list li{
+    padding-top: 23px;
+}
+.first__item{
+    padding-top: 0px !important;
+}
+.start__price{
+    color: #6D6D77;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    padding-bottom: 3px;
+}
+.sale__price{
+    margin: 0;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 70px;
+    padding-bottom: 18px;
+}
+.prices__card-item{
+    width: 33.3%;
+    background-color: #DEEFE4;
+}
+.optimal{
+    width: 33.4%;
+    background-color: #504DEE;
+    color: white;
+}
+.choose__button{
+    color: #FBFBFC;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    padding: 16px 36px;
+    background-color: #19191C;
+    border: none;
+}
+.choose__button:hover{
+    cursor: pointer;
+}
+.optimal__btn{
+    background-color: #FBFBFC;
+    color: #504DEE;
+}
+
+
+/* FOOTER SECTION--------------------------------------------------------------------------*/
+
+
+.footer{
+    background-color: #19191C;
+}
+.footer__box{
+    display: flex;
+    gap: 146px;
+    flex-wrap: wrap;
+}
+.sitemap__box{
+    display: flex;
+    padding: 68px 0 0 0;
+    flex-wrap: wrap;
+    gap: 200px;
+}
+.footer__info{
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+    padding: 59px 0 0 0;
+}
+.footer__logo{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FBFBFC;
+    text-decoration: none;
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.contacts__link{
+    color: #FBFBFC;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    text-decoration: none;
+}
+.sitemap{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.sitemap__title{
+    margin: 0;
+    color: #FBFBFC;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+}
+.sitemap__list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+}
+.sitemap__link{
+    color: #EFEFF2;
+    text-decoration: none;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 62px 0;
+    gap: 28px;
+}
+.copyright__link{
+    text-decoration: none;
+    color: #6D6D77;
+}
+.copyright__text{
+    color: #6D6D77 ;
+    margin: 0;
+}
+
+
+/* MEDIA QUERY SECTION----------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 767px){
+
+    .sitemap__box, .footer__box, .prices__cards, 
+    .profession__cards, .profession__box, .job__info,
+    .offer,.copyright{
+        flex-direction: column;
+    }
+    .container{
+        width: auto;
+        padding: 0 15px;
+    }
+    .header{
+        padding: 15px;
+    }
+    .mobile__link{
+        display: flex;
+        justify-content: center;
+        padding: 7px 0;
+        text-decoration: none;
+        color: #19191C;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 22px;
+    }
+    .offer{
+        padding-top: 15px;
+        background: none;
+    }
+    .programs__list{
+        position: static;
+        background: none;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .programs__list-item{
+        position: static;
+        width: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card__item, .profession__description,
+    .offer__holder, .designer__text, .prices__card-item{
+        width: auto;
+    }
+    .sitemap__box,.footer__box{
+        gap: 50px;
+        padding: 0;
+    }
+    .footer__logo,.sitemap__title,.copyright__link,
+    .copyright__text{
+        display: flex;
+        justify-content: center;
+    }
+    .sitemap__list,.contacts{
+        padding-left: 15px;
+    }
+    .profession__box{
+        gap: 50px;
+    }
+
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .nav{
+        width: auto;
+        display: none;
+    }
+    .header__box{
+        justify-content: end;
+    }
+    .offer__holder{
+        background: none;
+    }
+    .optimal{
+        width: auto;
+    }
+    .job__info{
+        gap: 50px;
+    }
+    .profession__box{
+        padding: 70px 0;
+    }
+    .discover__wrapper{
+        padding: 70px 0;
+    }
+    .discover__title{
+        padding-bottom: 50px;
+    }
+    .offer__time{
+        padding-bottom: 70px;
+    }
+    
+}
+
