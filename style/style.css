@@ -562,6 +562,8 @@ body{
     .sale__price {
         font-size: 45px;
     }
-    
+    .card__holder{
+        height: auto;
+    }
 }
 
