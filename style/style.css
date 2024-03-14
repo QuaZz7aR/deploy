@@ -565,5 +565,8 @@ body{
     .card__holder{
         height: auto;
     }
+    .card__list{
+        padding-bottom: 48px;
+    }
 }
 
