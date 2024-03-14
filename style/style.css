@@ -559,6 +559,9 @@ body{
     .offer__time{
         padding-bottom: 70px;
     }
+    .sale__price {
+        font-size: 45px;
+    }
     
 }
 
